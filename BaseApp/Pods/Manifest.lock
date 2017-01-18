@@ -1,0 +1,29 @@
+PODS:
+  - Module (1.0.0):
+    - Module/Example (= 1.0.0)
+    - Module/Tool (= 1.0.0)
+  - Module/Example (1.0.0)
+  - Module/Tool (1.0.0)
+  - Server (1.0.1):
+    - Server/Http (= 1.0.1)
+    - Server/Socket (= 1.0.1)
+  - Server/Http (1.0.1)
+  - Server/Socket (1.0.1)
+
+DEPENDENCIES:
+  - Module (from `../Module`)
+  - Server (from `../Server`)
+
+EXTERNAL SOURCES:
+  Module:
+    :path: "../Module"
+  Server:
+    :path: "../Server"
+
+SPEC CHECKSUMS:
+  Module: 27b983d00c62ca1aab367a2f6df3d19c3dc30b29
+  Server: 65d2bddd36a8076ab25871e41d7fe9797bac13d6
+
+PODFILE CHECKSUM: c8890a6c398c24fe9ff1a7994454786e4e1f23d6
+
+COCOAPODS: 1.1.1

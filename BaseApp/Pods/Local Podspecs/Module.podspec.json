@@ -1,0 +1,44 @@
+{
+  "name": "Module",
+  "version": "1.0.0",
+  "summary": "A short description of Module.",
+  "homepage": "https://github.com/SnowMango",
+  "license": "MIT",
+  "authors": {
+    "zhengfeng": "164804868@qq.com"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source": {
+    "path": "~/Desktop/feng/Module"
+  },
+  "requires_arc": true,
+  "exclude_files": "*.podspec",
+  "source_files": "Module/Module*.{h,m}",
+  "public_header_files": "**/Module*.h",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "subspecs": [
+    {
+      "name": "Example",
+      "source_files": "Example/**/*.{h,m}",
+      "public_header_files": "**/Module*.h",
+      "resources": [
+        "Example/Resources/**/*.{png,storyboard,xib}"
+      ],
+      "frameworks": "CoreGraphics"
+    },
+    {
+      "name": "Tool",
+      "source_files": "Tools/**/*.{h,m}",
+      "public_header_files": "**/Module*.h",
+      "resources": [
+        "Tools/Resources/**/*.*"
+      ],
+      "frameworks": "AVFoundation"
+    }
+  ]
+}
